@@ -1,5 +1,20 @@
 <template>
 <div>
-  Hello World! Path: {{ $route.path }}
+  {{ message }}
 </div>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: this.message
+    }
+  },
+  computed: {
+    message() {
+      return `Hello! Path: ${this.$route.path}`
+    }
+  }
+}
+</script>
