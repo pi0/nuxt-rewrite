@@ -1,6 +1,14 @@
 {
-  "private": true,
-  "dependencies": {
+  "name": "nuxt-rewrite",
+  "version": "0.0.0",
+  "main": "lib/module.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "dev": "nuxt example"
+  },
+  "devDependencies": {
     "@nuxtjs/proxy": "^1.3.2",
     "nuxt-edge": "^2.5.0-25843687.febcd6c5"
   }
