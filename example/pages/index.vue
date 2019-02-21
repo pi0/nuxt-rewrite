@@ -13,7 +13,7 @@ export default {
   },
   computed: {
     message() {
-      return `Hello! Path: ${this.$route.path}`
+      return `Hello! Path: ${this.$route.path} Query: ${JSON.stringify(this.$route.query)}`
     }
   }
 }
